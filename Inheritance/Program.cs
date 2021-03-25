@@ -34,6 +34,25 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var burb = new Bird();
+            burb.doesFly = true;
+            burb.predator = true;
+            burb.hourCanFly = 3;
+            burb.name = "Eagle";
+
+
+            var rept = new Reptile();
+            rept.hasScales = true;
+            rept.monthsActive = 7;
+            rept.legs = true;
+            rept.commonName = "Lizard";
+
+
+            Console.WriteLine($"The animals that have been picked are birds: " +
+                $"{burb.name} and it can fly {burb.doesFly} for {burb.hourCanFly}" +
+                $" hours, but is it a predator? {burb.predator}. \n And for reptiles: " +
+                $"{rept.commonName} and it has scales {rept.hasScales} and is active" +
+                $"{rept.monthsActive}  months, and it has legs {rept.legs}");
         }
     }
 }
